@@ -8,17 +8,17 @@ import urllib
 
 import rospy
 import roslib
-roslib.load_manifest("hirain_visualization")
+roslib.load_manifest("visualization")
 import sys
 import cv2
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
 
-from hirain_visualization.msg import Ego
+from visualization.msg import Ego
 
 ss = 'http://api.map.baidu.com/staticimage/v2?ak=hK1vUDiX7NVayGcV3SdK1QIY38bcfPhW&mcode=666666&center'
-picName = '/home/hirain/catkin_ws/src/hirain_visualization/pics/veh_loaction.png'
+picName = '/home/jiangjiang/catkin_ws/src/visualization/pics/veh_loaction.png'
 
 def veh_web_map_callback(data):
 	lon = data.lon
