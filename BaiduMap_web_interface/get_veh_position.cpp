@@ -5,11 +5,11 @@
 *	Describe: ...
 **********************************************************/
 #include <ros/ros.h>
-#include <hirain_visualization/Ego.h>
+#include <visualization/Ego.h>
 
 ros::Publisher veh_position_pub;
 
-hirain_visualization::Ego msg;
+visualization::Ego msg;
 
 int count = 0;
 
@@ -54,7 +54,7 @@ int main(int argc, char** argv)
 {
 	ros::init(argc, argv, "get_veh_position");
 	ros::NodeHandle n;
-	veh_position_pub 	= n.advertise<hirain_visualization::Ego>("veh_positon", 1);
+	veh_position_pub 	= n.advertise<visualization::Ego>("veh_positon", 1);
 	ros::Rate loop_rate(10);
 
 	while(1)
