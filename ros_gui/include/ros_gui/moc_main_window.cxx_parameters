@@ -1,0 +1,17 @@
+-I/opt/ros/indigo/include
+-I/usr/include
+-I/usr/include/qt4
+-I/usr/include/qt4/QtWebKit
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/home/jiangjiang/catkin_ws/src/ros_gui
+-DROS_PACKAGE_NAME="ros_gui"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-DQT_NO_DEBUG
+-DQT_WEBKIT_LIB
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-DQT_NO_KEYWORDS
+-o
+/home/jiangjiang/catkin_ws/src/ros_gui/include/ros_gui/moc_main_window.cxx
+/home/jiangjiang/catkin_ws/src/ros_gui/include/ros_gui/main_window.hpp
